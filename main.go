@@ -136,12 +136,7 @@ func main() {
 		log.Error(err)
 		return
 	}
-	var s = []Fetcher{
-		&sources.PuntoMedico{},
-		&sources.MedicoLeopoldPlatz{},
-		&sources.ArkonoPlatz{},
-		&sources.Helios{},
-	}
+	var s = []Fetcher{}
 
 	s = append(s, doctolibs...)
 
